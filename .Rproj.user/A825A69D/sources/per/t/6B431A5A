@@ -1,14 +1,14 @@
 {
-    "id": "C49D6166",
-    "path": "~/sae_book/index.qmd",
-    "project_path": "index.qmd",
+    "id": "6B431A5A",
+    "path": "~/sae_book/intro.qmd",
+    "project_path": "intro.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3490460826",
     "contents": "",
     "dirty": false,
-    "created": 1690311447060.0,
+    "created": 1690311727585.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 8,
     "properties": {
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "117:0",
-        "cursorPosition": "5,0",
-        "scrollLine": "0"
+        "rmdVisualModeLocation": "2:0",
+        "cursorPosition": "12,248",
+        "scrollLine": "3"
     },
     "folds": "",
-    "lastKnownWriteTime": 1690315874,
+    "lastKnownWriteTime": 1690317551,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1690315874,
+    "last_content_update": 1690317551957,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -21,11 +21,25 @@
     "text": "Marco de trabajo\nTécnicas de estimación\nSoftware estadístico y paquetes\nUtilidad y ejemplos"
   },
   {
-    "objectID": "marco-trabajo.html",
-    "href": "marco-trabajo.html",
+    "objectID": "marco-trabajo.html#especificación",
+    "href": "marco-trabajo.html#especificación",
     "title": "3  Marco de Trabajo",
-    "section": "",
-    "text": "Relación con Stake holders\nimagen de pasos principales\nTza…"
+    "section": "3.1 Especificación",
+    "text": "3.1 Especificación\nEntrada:\n\nNecesidades de usuarios\nDisponibilidad de Datos\nMétodos SAE\n\nSalida:\n\nObjetivos de estimación y geografías\nElección inicial de métodos y software"
+  },
+  {
+    "objectID": "marco-trabajo.html#análisis-y-adaptación",
+    "href": "marco-trabajo.html#análisis-y-adaptación",
+    "title": "3  Marco de Trabajo",
+    "section": "3.2 Análisis y adaptación",
+    "text": "3.2 Análisis y adaptación\n\nEstimaciones preliminares"
+  },
+  {
+    "objectID": "marco-trabajo.html#evaluación",
+    "href": "marco-trabajo.html#evaluación",
+    "title": "3  Marco de Trabajo",
+    "section": "3.3 Evaluación",
+    "text": "3.3 Evaluación\n\nResponder la pregunta ¿son satisfactorios los resultados?\n\nSi la respuesta es negativa se vuelve a la etapa de especificación\nSi la respuesta es positiva se generan estimaciones finales y se calculan medidas de incertidumbre\n\n\n\n\nTzavidis, Nikos, Li-Chun Zhang, Angela Luna, Timo Schmid, and Natalia Rojas-Perilla. 2018. “From Start to Finish: A Framework for the Production of Small Area Official Statistics.” Journal of the Royal Statistical Society: Series A (Statistics in Society) 181 (4): 927–79. https://doi.org/10.1111/rssa.12364."
   },
   {
     "objectID": "teoria.html#modelos-de-área",
@@ -165,6 +179,6 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Molina, Isabel. 2019. “Desagregación de Datos En Encuestas de\nHogares: Metodologías de Estimación En Áreas Pequeñas.”\n\n\nMolina, Isabel, and J. N. K. Rao. 2010. “Small Area Estimation of\nPoverty Indicators.” Canadian Journal of Statistics 38\n(3): 369–85. https://doi.org/10.1002/cjs.10051.\n\n\nNewhouse, David Locke, Joshua D. Merfeld, Anusha Ramakrishnan, Tom\nSwartz, and Partha Lahiri. 2022. “Small Area\nEstimation of Monetary Poverty in Mexico Using\nSatellite Imagery and Machine Learning.” SSRN\nScholarly Paper. Rochester, NY. October 3, 2022. https://doi.org/10.2139/ssrn.4235976.\n\n\nSugasawa, Shonosuke, and Tatsuya Kubokawa. 2020. “Small Area\nEstimation with Mixed Models: A Review.” Japanese Journal of\nStatistics and Data Science 3 (2): 693–720. https://doi.org/10.1007/s42081-020-00076-x."
+    "text": "Molina, Isabel. 2019. “Desagregación de Datos En Encuestas de\nHogares: Metodologías de Estimación En Áreas Pequeñas.”\n\n\nMolina, Isabel, and J. N. K. Rao. 2010. “Small Area Estimation of\nPoverty Indicators.” Canadian Journal of Statistics 38\n(3): 369–85. https://doi.org/10.1002/cjs.10051.\n\n\nNewhouse, David Locke, Joshua D. Merfeld, Anusha Ramakrishnan, Tom\nSwartz, and Partha Lahiri. 2022. “Small Area\nEstimation of Monetary Poverty in Mexico Using\nSatellite Imagery and Machine Learning.” SSRN\nScholarly Paper. Rochester, NY. October 3, 2022. https://doi.org/10.2139/ssrn.4235976.\n\n\nSugasawa, Shonosuke, and Tatsuya Kubokawa. 2020. “Small Area\nEstimation with Mixed Models: A Review.” Japanese Journal of\nStatistics and Data Science 3 (2): 693–720. https://doi.org/10.1007/s42081-020-00076-x.\n\n\nTzavidis, Nikos, Li-Chun Zhang, Angela Luna, Timo Schmid, and Natalia\nRojas-Perilla. 2018. “From Start to Finish: A Framework for the\nProduction of Small Area Official Statistics.” Journal of the\nRoyal Statistical Society: Series A (Statistics in Society) 181\n(4): 927–79. https://doi.org/10.1111/rssa.12364."
   }
 ]
