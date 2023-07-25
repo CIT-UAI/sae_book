@@ -27,6 +27,163 @@
             "title": "Literate programming",
             "type": "article-journal",
             "volume": "27"
+        },
+        {
+            "DOI": "10.1002/cjs.10051",
+            "ISSN": "1708-945X",
+            "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cjs.10051",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        11,
+                        5
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Molina",
+                    "given": "Isabel"
+                },
+                {
+                    "family": "Rao",
+                    "given": "J. N. K."
+                }
+            ],
+            "container-title": "Canadian Journal of Statistics",
+            "id": "molinaSmallAreaEstimation2010",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "keyword": "Empirical best estimator,MSC 2000: Primary 62D05,Parametric bootstrap,Poverty mapping,secondary 62G09",
+            "language": "en-US",
+            "page": "369-385",
+            "title": "Small area estimation of poverty indicators",
+            "type": "article-journal",
+            "volume": "38"
+        },
+        {
+            "DOI": "10.1007/s42081-020-00076-x",
+            "ISSN": "2520-8764",
+            "URL": "https://doi.org/10.1007/s42081-020-00076-x",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        12
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Sugasawa",
+                    "given": "Shonosuke"
+                },
+                {
+                    "family": "Kubokawa",
+                    "given": "Tatsuya"
+                }
+            ],
+            "container-title": "Japanese Journal of Statistics and Data Science",
+            "container-title-short": "Jpn J Stat Data Sci",
+            "id": "sugasawaSmallAreaEstimation2020",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        12,
+                        1
+                    ]
+                ]
+            },
+            "keyword": "Best linear unbiased predictor,Empirical Bayes,Fay–Herriot model,Hierarchical Bayes,Linear mixed model,Maximum likelihood estimator,Mean squared error,Nested error regression model,Shrinkage",
+            "language": "en-US",
+            "page": "693-720",
+            "title": "Small area estimation with mixed models: A review",
+            "title-short": "Small area estimation with mixed models",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "Molina",
+                    "given": "Isabel"
+                }
+            ],
+            "id": "molina2019desagregacion",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "publisher": "CEPAL",
+            "title": "Desagregación de datos en encuestas de hogares: Metodologías de estimación en áreas pequeñas",
+            "title-short": "Desagregación de datos en encuestas de hogares",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.2139/ssrn.4235976",
+            "URL": "https://papers.ssrn.com/abstract=4235976",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        11,
+                        3
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Newhouse",
+                    "given": "David Locke"
+                },
+                {
+                    "family": "Merfeld",
+                    "given": "Joshua D."
+                },
+                {
+                    "family": "Ramakrishnan",
+                    "given": "Anusha"
+                },
+                {
+                    "family": "Swartz",
+                    "given": "Tom"
+                },
+                {
+                    "family": "Lahiri",
+                    "given": "Partha"
+                }
+            ],
+            "genre": "SSRN Scholarly Paper",
+            "id": "newhouseSmallAreaEstimation2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        10,
+                        3
+                    ]
+                ]
+            },
+            "keyword": "machine learning,poverty,poverty mapping,satellite data,small area estimation",
+            "language": "en-US",
+            "number": "4235976",
+            "publisher-place": "Rochester, NY",
+            "status": "preprint",
+            "title": "Small Area Estimation of Monetary Poverty in Mexico Using Satellite Imagery and Machine Learning",
+            "type": "webpage"
         }
     ],
     "project_biblios": [

@@ -4,7 +4,7 @@ Esta sección detalla algunos recursos relevantes para profundizar en el tema de
 
 ## Guias, Manuales y Seminarios
 
-- [SAE4SDG](https://unstats.un.org/wiki/display/SAE4SDG/SAE4SDG): Guia para el desarrollo de estimaciones de area pequeña desarrollada por el departamento de estadísticas de la ONU en el contexto de generar herramientas para el monitoreo de objetivos de desarrollo sostenible. Es un excelente punto de partida para tener una vision global del tema, además de incluir recursos, ejemplos, bases de datos y referencias a otros recursos de educación relevante.
+- [SAE4SDG](https://unstats.un.org/wiki/display/SAE4SDG/SAE4SDG): Página en formato Wiki que incluye guías para el desarrollo de estimaciones de area pequeña desarrollada por el departamento de estadísticas de la ONU en el contexto de generar herramientas para el monitoreo de objetivos de desarrollo sostenible. Es un excelente punto de partida para tener una vision global del tema, además de incluir recursos, ejemplos, bases de datos y referencias a otros recursos de educación relevante. 
 
 - [Seminario SAE Chile 2022 Cepal](https://www.cepal.org/es/eventos/seminario-desagregacion-datos-mediante-tecnicas-estimacion-areas-pequenas-chile): Repositorio con presentaciones de aplicaciones destacadas de SAE en Chile.
 
@@ -37,9 +37,12 @@ Esta sección detalla algunos recursos relevantes para profundizar en el tema de
 ## Papers
 
 - Molina y Rao 2010
+[@molinaSmallAreaEstimation2010]
 
 - Sugasawa y Kobokawa 2021
+[@sugasawaSmallAreaEstimation2020]
 
-- Molina 2019
+- Molina 2019 [@molina2019desagregacion]
 
-- Newhouse et al 2022
+
+- Newhouse et al 2022 [@newhouseSmallAreaEstimation2022]

@@ -3,7 +3,7 @@
     "path": "~/sae_book/intro.qmd",
     "project_path": "intro.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3490460826",
     "contents": "",
     "dirty": false,
     "created": 1690311727585.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2:0",
-        "cursorPosition": "28,0",
-        "scrollLine": "0"
+        "cursorPosition": "12,248",
+        "scrollLine": "3"
     },
     "folds": "",
-    "lastKnownWriteTime": 1690315857,
+    "lastKnownWriteTime": 1690317551,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1690315857,
+    "last_content_update": 1690317551957,
     "read_only": false,
     "read_only_alternatives": []
 }

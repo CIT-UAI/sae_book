@@ -1,9 +1,9 @@
 {
     "id": "915EC10A",
-    "path": "C:/Users/leonardo.rojas.k/Documents/sae_book/marco-trabajo.qmd",
+    "path": "~/sae_book/marco-trabajo.qmd",
     "project_path": "marco-trabajo.qmd",
     "type": "quarto_markdown",
-    "hash": "1876349464",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1690312274744.0,
@@ -17,11 +17,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1690313523,
+    "lastKnownWriteTime": 1690315857,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1690313523239,
+    "last_content_update": 1690315857,
     "read_only": false,
     "read_only_alternatives": []
 }

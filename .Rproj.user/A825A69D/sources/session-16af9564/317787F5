@@ -1,9 +1,9 @@
 {
     "id": "317787F5",
-    "path": "C:/Users/leonardo.rojas.k/Documents/sae_book/teoria.qmd",
+    "path": "~/sae_book/teoria.qmd",
     "project_path": "teoria.qmd",
     "type": "quarto_markdown",
-    "hash": "501345776",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1690312304310.0,
@@ -17,11 +17,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1690313522,
+    "lastKnownWriteTime": 1690315857,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1690313522480,
+    "last_content_update": 1690315857,
     "read_only": false,
     "read_only_alternatives": []
 }
