@@ -25,7 +25,7 @@
     "href": "marco-trabajo.html#especificación",
     "title": "3  Marco de Trabajo",
     "section": "3.1 Especificación",
-    "text": "3.1 Especificación\nEntrada:\n\nNecesidades de usuarios\nDisponibilidad de Datos\nMétodos SAE\n\nSalida:\n\nObjetivos de estimación y geografías\nElección inicial de métodos y software"
+    "text": "3.1 Especificación\nEntrada:\n\nNecesidades de usuarios\nDisponibilidad de Datos\nMétodos SAE\n\nFlujo de decision\nSalida:\n\nObjetivos de estimación y geografías\nElección inicial de métodos y software"
   },
   {
     "objectID": "marco-trabajo.html#análisis-y-adaptación",
@@ -46,14 +46,14 @@
     "href": "teoria.html#modelos-de-área",
     "title": "4  Marco Teórico",
     "section": "4.1 Modelos de Área",
-    "text": "4.1 Modelos de Área"
+    "text": "4.1 Modelos de Área\nReferencia Wiki"
   },
   {
     "objectID": "teoria.html#modelos-de-unidad",
     "href": "teoria.html#modelos-de-unidad",
     "title": "4  Marco Teórico",
     "section": "4.2 Modelos de Unidad",
-    "text": "4.2 Modelos de Unidad"
+    "text": "4.2 Modelos de Unidad\nReferencia wiki"
   },
   {
     "objectID": "teoria.html#formas-de-estimación",
@@ -67,14 +67,14 @@
     "href": "teoria.html#modelo-multinivel-de-errores-aninados",
     "title": "4  Marco Teórico",
     "section": "4.4 Modelo Multinivel de errores aninados",
-    "text": "4.4 Modelo Multinivel de errores aninados"
+    "text": "4.4 Modelo Multinivel de errores aninados\nGuiarse por Sugasawa and Kubokawa (2020)\n$$\n$$"
   },
   {
     "objectID": "teoria.html#estimación-de-mse-e-intervalos-de-confianza",
     "href": "teoria.html#estimación-de-mse-e-intervalos-de-confianza",
     "title": "4  Marco Teórico",
     "section": "4.5 Estimación de MSE e intervalos de Confianza",
-    "text": "4.5 Estimación de MSE e intervalos de Confianza"
+    "text": "4.5 Estimación de MSE e intervalos de Confianza\n\n\n\n\nSugasawa, Shonosuke, and Tatsuya Kubokawa. 2020. “Small Area Estimation with Mixed Models: A Review.” Japanese Journal of Statistics and Data Science 3 (2): 693–720. https://doi.org/10.1007/s42081-020-00076-x."
   },
   {
     "objectID": "aplicaciones.html#pobreza-comunal",
