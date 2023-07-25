@@ -11,7 +11,7 @@
     "href": "intro.html",
     "title": "1  Introducción",
     "section": "",
-    "text": "Definicion SAE\nDolor: necesidad de datos para diseño de politica publica\nCensos se demoran, encuestas son caras\nTradicion de investigacion en el area\nA lo largo del libro se tratarán los siguientes temas\n\nmarco de trabajo\nrevisión teórica de modelos\nEjemplos de aplicaciones\nDemostración\n\nProducir informacion desagregada para distintos grupos de poblacion\nInsumo para la definición de políticas públicas\nIntegración de datos: registros administrativos, web scrapping, datos"
+    "text": "Definicion SAE: conjunto de métodos usadaos para producir estimadores basados en encuestas para areas geográficas o dominios de estudio en los cuales los tamaños muestrales son demasiado pequeños, o incluso ausentes, y así entregar estimaciones válidas.\nPara producir estos estimadores válidos, en general es necesario incluir bases de datos adicionales, mediante un proceso de modelado estadístico.\nDolores: necesidad de datos para diseño de politica publica\nCensos se demoran, encuestas son caras\nTradicion de investigacion en el area, desde libros, hasta la producción de guías de trabajo que entregan directrices para que estos procedimientos puedan ser utilizados por agencias estadísticias nacionales e investigadores interesados en el tema.\nA lo largo del libro se tratarán los siguientes temas\n\nmarco de trabajo\nrevisión teórica de modelos\nEjemplos de aplicaciones\nDemostración\n\nProducir informacion desagregada para distintos grupos de poblacion\nInsumo para la definición de políticas públicas\nIntegración de datos: registros administrativos, web scrapping, datos"
   },
   {
     "objectID": "summary.html",
@@ -123,7 +123,7 @@
     "href": "recursos.html#guias-manuales-y-seminarios",
     "title": "7  Recursos",
     "section": "7.1 Guias, Manuales y Seminarios",
-    "text": "7.1 Guias, Manuales y Seminarios\n\nSAE4SDG: Guia para el desarrollo de estimaciones de area pequeña desarrollada por el departamento de estadísticas de la ONU en el contexto de generar herramientas para el monitoreo de objetivos de desarrollo sostenible. Es un excelente punto de partida para tener una vision global del tema, además de incluir recursos, ejemplos, bases de datos y referencias a otros recursos de educación relevante.\nSeminario SAE Chile 2022 Cepal: Repositorio con presentaciones de aplicaciones destacadas de SAE en Chile."
+    "text": "7.1 Guias, Manuales y Seminarios\n\nSAE4SDG: Página en formato Wiki que incluye guías para el desarrollo de estimaciones de area pequeña desarrollada por el departamento de estadísticas de la ONU en el contexto de generar herramientas para el monitoreo de objetivos de desarrollo sostenible. Es un excelente punto de partida para tener una vision global del tema, además de incluir recursos, ejemplos, bases de datos y referencias a otros recursos de educación relevante.\nSeminario SAE Chile 2022 Cepal: Repositorio con presentaciones de aplicaciones destacadas de SAE en Chile."
   },
   {
     "objectID": "recursos.html#blogs-y-presentaciones",
@@ -158,6 +158,13 @@
     "href": "recursos.html#papers",
     "title": "7  Recursos",
     "section": "7.6 Papers",
-    "text": "7.6 Papers\n\nMolina y Rao 2010\nSugasawa y Kobokawa 2021\nMolina 2019\nNewhouse et al 2022"
+    "text": "7.6 Papers\n\nMolina y Rao 2010 (Molina and Rao 2010)\nSugasawa y Kobokawa 2021 (Sugasawa and Kubokawa 2020)\nMolina 2019 (Molina 2019)\nNewhouse et al 2022 (Newhouse et al. 2022)\n\n\n\n\n\nMolina, Isabel. 2019. “Desagregación de Datos En Encuestas de Hogares: Metodologías de Estimación En Áreas Pequeñas.”\n\n\nMolina, Isabel, and J. N. K. Rao. 2010. “Small Area Estimation of Poverty Indicators.” Canadian Journal of Statistics 38 (3): 369–85. https://doi.org/10.1002/cjs.10051.\n\n\nNewhouse, David Locke, Joshua D. Merfeld, Anusha Ramakrishnan, Tom Swartz, and Partha Lahiri. 2022. “Small Area Estimation of Monetary Poverty in Mexico Using Satellite Imagery and Machine Learning.” SSRN Scholarly Paper. Rochester, NY. October 3, 2022. https://doi.org/10.2139/ssrn.4235976.\n\n\nSugasawa, Shonosuke, and Tatsuya Kubokawa. 2020. “Small Area Estimation with Mixed Models: A Review.” Japanese Journal of Statistics and Data Science 3 (2): 693–720. https://doi.org/10.1007/s42081-020-00076-x."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Molina, Isabel. 2019. “Desagregación de Datos En Encuestas de\nHogares: Metodologías de Estimación En Áreas Pequeñas.”\n\n\nMolina, Isabel, and J. N. K. Rao. 2010. “Small Area Estimation of\nPoverty Indicators.” Canadian Journal of Statistics 38\n(3): 369–85. https://doi.org/10.1002/cjs.10051.\n\n\nNewhouse, David Locke, Joshua D. Merfeld, Anusha Ramakrishnan, Tom\nSwartz, and Partha Lahiri. 2022. “Small Area\nEstimation of Monetary Poverty in Mexico Using\nSatellite Imagery and Machine Learning.” SSRN\nScholarly Paper. Rochester, NY. October 3, 2022. https://doi.org/10.2139/ssrn.4235976.\n\n\nSugasawa, Shonosuke, and Tatsuya Kubokawa. 2020. “Small Area\nEstimation with Mixed Models: A Review.” Japanese Journal of\nStatistics and Data Science 3 (2): 693–720. https://doi.org/10.1007/s42081-020-00076-x."
   }
 ]
