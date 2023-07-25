@@ -1,0 +1,28 @@
+# Introducción
+
+Definicion SAE
+
+Dolor: necesidad de datos para diseño de politica publica
+
+Censos se demoran, encuestas son caras
+
+Tradicion de investigacion en el area
+
+
+A lo largo del libro se tratarán los siguientes temas
+
+- marco de trabajo 
+
+- revisión teórica de modelos
+
+- Ejemplos de aplicaciones
+
+- Demostración 
+
+
+Producir informacion desagregada para distintos grupos de poblacion
+
+Insumo para la definición de políticas públicas
+
+Integración de datos: registros administrativos, web scrapping, datos
+

@@ -1,0 +1,45 @@
+# Recursos
+
+Esta sección detalla algunos recursos relevantes para profundizar en el tema de estimación de areas pequeñas.
+
+## Guias, Manuales y Seminarios
+
+- [SAE4SDG](https://unstats.un.org/wiki/display/SAE4SDG/SAE4SDG): Guia para el desarrollo de estimaciones de area pequeña desarrollada por el departamento de estadísticas de la ONU en el contexto de generar herramientas para el monitoreo de objetivos de desarrollo sostenible. Es un excelente punto de partida para tener una vision global del tema, además de incluir recursos, ejemplos, bases de datos y referencias a otros recursos de educación relevante.
+
+- [Seminario SAE Chile 2022 Cepal](https://www.cepal.org/es/eventos/seminario-desagregacion-datos-mediante-tecnicas-estimacion-areas-pequenas-chile): Repositorio con presentaciones de aplicaciones destacadas de SAE en Chile.
+
+
+## Blogs y Presentaciones
+
+- Encuentro SAE Chile cepal
+
+## Software estadístico
+
+- [emdi](https://cran.r-project.org/web/packages/emdi/index.html): "Estimating and Mapping Disagrgregated Indicators" Paquete de R que destaca por su flexibilidad y por ser usado como punto de partida para generar nuevas implementaciones.
+
+- stata
+
+...
+
+## videos
+
+- [Seminario CEPAL SAE 2023](https://www.cepal.org/es/eventos/seminario-regional-metodologias-estimacion-areas-pequenas-desagregacion-datos): Este seminario realizado el 2023 contiene un conjunto de presentaciones y referencias a desarrollos actuales metodológicos sobre la estimaciones de areas pequeñas, destacando la actualidad de estos además del contexto asociado a sudamérica y países en desarrollo.
+
+
+- Paula Moraga
+
+## libros
+
+- Molina y Rao
+
+- Multilevel SAE
+
+## Papers
+
+- Molina y Rao 2010
+
+- Sugasawa y Kobokawa 2021
+
+- Molina 2019
+
+- Newhouse et al 2022
