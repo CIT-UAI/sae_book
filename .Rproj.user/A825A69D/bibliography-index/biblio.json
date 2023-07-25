@@ -184,6 +184,59 @@
             "status": "preprint",
             "title": "Small Area Estimation of Monetary Poverty in Mexico Using Satellite Imagery and Machine Learning",
             "type": "webpage"
+        },
+        {
+            "DOI": "10.1111/rssa.12364",
+            "ISSN": "1467-985X",
+            "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1111/rssa.12364",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        10,
+                        19
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Tzavidis",
+                    "given": "Nikos"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Li-Chun"
+                },
+                {
+                    "family": "Luna",
+                    "given": "Angela"
+                },
+                {
+                    "family": "Schmid",
+                    "given": "Timo"
+                },
+                {
+                    "family": "Rojas-Perilla",
+                    "given": "Natalia"
+                }
+            ],
+            "container-title": "Journal of the Royal Statistical Society: Series A (Statistics in Society)",
+            "id": "tzavidisStartFinishFramework2018",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "keyword": "Census,Design-based methods,Diagnostics,Inequality,Model-based methods",
+            "language": "en-US",
+            "page": "927-979",
+            "title": "From start to finish: A framework for the production of small area official statistics",
+            "title-short": "From start to finish",
+            "type": "article-journal",
+            "volume": "181"
         }
     ],
     "project_biblios": [

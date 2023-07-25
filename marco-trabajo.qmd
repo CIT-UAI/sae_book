@@ -1,10 +1,10 @@
 # Marco de Trabajo
 
+El trabajo de @tzavidisStartFinishFramework2018 entrega un marco de trabajo basado en la interacción con usuarios y con la parsimonia como principio rector. Este luego se encuentra simplificado en la web de la ONU para la producción de estimadiones SAE [SAE4SDG](https://unstats.un.org/wiki/display/SAE4SDG/Producing+SAE)
+
 Relación con Stake holders
 
-imagen de pasos principales
 
-Tza...
 
 ![Flujo de Trabajo SAE](sae-workflow.png)
 

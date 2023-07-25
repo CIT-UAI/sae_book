@@ -3,7 +3,7 @@
     "path": "~/sae_book/marco-trabajo.qmd",
     "project_path": "marco-trabajo.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2488930602",
     "contents": "",
     "dirty": false,
     "created": 1690312274744.0,
@@ -13,7 +13,7 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "32,39",
+        "cursorPosition": "8,0",
         "scrollLine": "19",
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -22,11 +22,11 @@
         "rmdVisualModeLocation": "103:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1690318149,
+    "lastKnownWriteTime": 1690318306,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1690318149247,
+    "last_content_update": 1690318306268,
     "read_only": false,
     "read_only_alternatives": []
 }
