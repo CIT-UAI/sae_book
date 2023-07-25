@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -158,7 +177,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#especificación" id="toc-especificación" class="nav-link active" data-scroll-target="#especificación"><span class="header-section-number">3.1</span> Especificación</a></li>
+  <li><a href="#análisis-y-adaptación" id="toc-análisis-y-adaptación" class="nav-link" data-scroll-target="#análisis-y-adaptación"><span class="header-section-number">3.2</span> Análisis y adaptación</a></li>
+  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación"><span class="header-section-number">3.3</span> Evaluación</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -180,11 +207,49 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>El trabajo de <span class="citation" data-cites="tzavidisStartFinishFramework2018">Tzavidis et al. (<a href="references.html#ref-tzavidisStartFinishFramework2018" role="doc-biblioref">2018</a>)</span> entrega un marco de trabajo basado en la interacción con usuarios y con la parsimonia como principio rector. Este luego se encuentra simplificado en la web de la ONU para la producción de estimadiones SAE <a href="https://unstats.un.org/wiki/display/SAE4SDG/Producing+SAE">SAE4SDG</a></p>
 <p>Relación con Stake holders</p>
-<p>imagen de pasos principales</p>
-<p>Tza…</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="sae-workflow.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Flujo de Trabajo SAE</figcaption>
+</figure>
+</div>
+<section id="especificación" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="especificación"><span class="header-section-number">3.1</span> Especificación</h2>
+<p>Entrada:</p>
+<ul>
+<li><p>Necesidades de usuarios</p></li>
+<li><p>Disponibilidad de Datos</p></li>
+<li><p>Métodos SAE</p></li>
+</ul>
+<p>Salida:</p>
+<ul>
+<li><p>Objetivos de estimación y geografías</p></li>
+<li><p>Elección inicial de métodos y software</p></li>
+</ul>
+</section>
+<section id="análisis-y-adaptación" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="análisis-y-adaptación"><span class="header-section-number">3.2</span> Análisis y adaptación</h2>
+<ul>
+<li>Estimaciones preliminares</li>
+</ul>
+</section>
+<section id="evaluación" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="evaluación"><span class="header-section-number">3.3</span> Evaluación</h2>
+<ul>
+<li>Responder la pregunta ¿son satisfactorios los resultados?</li>
+</ul>
+<p>Si la respuesta es negativa se vuelve a la etapa de especificación</p>
+<p>Si la respuesta es positiva se generan estimaciones finales y se calculan medidas de incertidumbre</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-tzavidisStartFinishFramework2018" class="csl-entry" role="listitem">
+Tzavidis, Nikos, Li-Chun Zhang, Angela Luna, Timo Schmid, and Natalia Rojas-Perilla. 2018. <span>“From Start to Finish: A Framework for the Production of Small Area Official Statistics.”</span> <em>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em> 181 (4): 927–79. <a href="https://doi.org/10.1111/rssa.12364">https://doi.org/10.1111/rssa.12364</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
