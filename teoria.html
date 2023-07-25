@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Estimación de Área Pequeña - 2&nbsp; Resumen</title>
+<title>Estimación de Área Pequeña - 4&nbsp; Marco Teórico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./marco-trabajo.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./aplicaciones.html" rel="next">
+<link href="./marco-trabajo.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./summary.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./teoria.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Marco Teórico</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link active">
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen</span></span></a>
   </div>
 </li>
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./teoria.html" class="sidebar-item-text sidebar-link">
+  <a href="./teoria.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Marco Teórico</span></span></a>
   </div>
 </li>
@@ -158,14 +158,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#modelos-de-área" id="toc-modelos-de-área" class="nav-link active" data-scroll-target="#modelos-de-área"><span class="header-section-number">4.1</span> Modelos de Área</a></li>
+  <li><a href="#modelos-de-unidad" id="toc-modelos-de-unidad" class="nav-link" data-scroll-target="#modelos-de-unidad"><span class="header-section-number">4.2</span> Modelos de Unidad</a></li>
+  <li><a href="#formas-de-estimación" id="toc-formas-de-estimación" class="nav-link" data-scroll-target="#formas-de-estimación"><span class="header-section-number">4.3</span> Formas de estimación</a></li>
+  <li><a href="#modelo-multinivel-de-errores-aninados" id="toc-modelo-multinivel-de-errores-aninados" class="nav-link" data-scroll-target="#modelo-multinivel-de-errores-aninados"><span class="header-section-number">4.4</span> Modelo Multinivel de errores aninados</a></li>
+  <li><a href="#estimación-de-mse-e-intervalos-de-confianza" id="toc-estimación-de-mse-e-intervalos-de-confianza" class="nav-link" data-scroll-target="#estimación-de-mse-e-intervalos-de-confianza"><span class="header-section-number">4.5</span> Estimación de MSE e intervalos de Confianza</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Marco Teórico</span></h1>
 </div>
 
 
@@ -180,12 +190,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Marco de trabajo</p>
-<p>Técnicas de estimación</p>
-<p>Software estadístico y paquetes</p>
-<p>Utilidad y ejemplos</p>
+<p>Grandes distinciones y modelos básicos</p>
+<p>Detalles de estimación para aplicaciones revisadas y</p>
+<p>Estimaciones de parámetros no lineales de la población en subareas</p>
+<p>Desagregación de información</p>
+<p>“Tomar fuerza”</p>
+<section id="modelos-de-área" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="modelos-de-área"><span class="header-section-number">4.1</span> Modelos de Área</h2>
+</section>
+<section id="modelos-de-unidad" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="modelos-de-unidad"><span class="header-section-number">4.2</span> Modelos de Unidad</h2>
+</section>
+<section id="formas-de-estimación" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="formas-de-estimación"><span class="header-section-number">4.3</span> Formas de estimación</h2>
+</section>
+<section id="modelo-multinivel-de-errores-aninados" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="modelo-multinivel-de-errores-aninados"><span class="header-section-number">4.4</span> Modelo Multinivel de errores aninados</h2>
+</section>
+<section id="estimación-de-mse-e-intervalos-de-confianza" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="estimación-de-mse-e-intervalos-de-confianza"><span class="header-section-number">4.5</span> Estimación de MSE e intervalos de Confianza</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -423,13 +449,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span>
+      <a href="./marco-trabajo.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Marco de Trabajo</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./marco-trabajo.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Marco de Trabajo</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./aplicaciones.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Aplicaciones</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

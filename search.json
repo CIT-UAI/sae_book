@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Estimación de Área Pequeña",
     "section": "",
-    "text": "Prefacio\nEl presente documento presenta la documentación general de los procesos de estimación en áreas pequeñas o desagregación de información."
+    "text": "Prefacio\nEl presente documento presenta la documentación general de los procesos de estimación en áreas pequeñas o desagregación de información.\nRapido desarrollo en la actualidad\nPapers clasicos"
   },
   {
     "objectID": "intro.html",
@@ -19,5 +19,145 @@
     "title": "2  Resumen",
     "section": "",
     "text": "Marco de trabajo\nTécnicas de estimación\nSoftware estadístico y paquetes\nUtilidad y ejemplos"
+  },
+  {
+    "objectID": "marco-trabajo.html",
+    "href": "marco-trabajo.html",
+    "title": "3  Marco de Trabajo",
+    "section": "",
+    "text": "Relación con Stake holders\nimagen de pasos principales\nTza…"
+  },
+  {
+    "objectID": "teoria.html#modelos-de-área",
+    "href": "teoria.html#modelos-de-área",
+    "title": "4  Marco Teórico",
+    "section": "4.1 Modelos de Área",
+    "text": "4.1 Modelos de Área"
+  },
+  {
+    "objectID": "teoria.html#modelos-de-unidad",
+    "href": "teoria.html#modelos-de-unidad",
+    "title": "4  Marco Teórico",
+    "section": "4.2 Modelos de Unidad",
+    "text": "4.2 Modelos de Unidad"
+  },
+  {
+    "objectID": "teoria.html#formas-de-estimación",
+    "href": "teoria.html#formas-de-estimación",
+    "title": "4  Marco Teórico",
+    "section": "4.3 Formas de estimación",
+    "text": "4.3 Formas de estimación"
+  },
+  {
+    "objectID": "teoria.html#modelo-multinivel-de-errores-aninados",
+    "href": "teoria.html#modelo-multinivel-de-errores-aninados",
+    "title": "4  Marco Teórico",
+    "section": "4.4 Modelo Multinivel de errores aninados",
+    "text": "4.4 Modelo Multinivel de errores aninados"
+  },
+  {
+    "objectID": "teoria.html#estimación-de-mse-e-intervalos-de-confianza",
+    "href": "teoria.html#estimación-de-mse-e-intervalos-de-confianza",
+    "title": "4  Marco Teórico",
+    "section": "4.5 Estimación de MSE e intervalos de Confianza",
+    "text": "4.5 Estimación de MSE e intervalos de Confianza"
+  },
+  {
+    "objectID": "aplicaciones.html#pobreza-comunal",
+    "href": "aplicaciones.html#pobreza-comunal",
+    "title": "5  Aplicaciones",
+    "section": "5.1 Pobreza Comunal",
+    "text": "5.1 Pobreza Comunal"
+  },
+  {
+    "objectID": "aplicaciones.html#uso-de-imágenes-satelitales",
+    "href": "aplicaciones.html#uso-de-imágenes-satelitales",
+    "title": "5  Aplicaciones",
+    "section": "5.2 Uso de imágenes satelitales",
+    "text": "5.2 Uso de imágenes satelitales"
+  },
+  {
+    "objectID": "aplicaciones.html#desigualdad-comunal-en-chile",
+    "href": "aplicaciones.html#desigualdad-comunal-en-chile",
+    "title": "5  Aplicaciones",
+    "section": "5.3 Desigualdad comunal en Chile",
+    "text": "5.3 Desigualdad comunal en Chile"
+  },
+  {
+    "objectID": "demo.html#objetivos-del-análisis",
+    "href": "demo.html#objetivos-del-análisis",
+    "title": "6  Demostración Consumo Energético",
+    "section": "6.1 Objetivos del Análisis",
+    "text": "6.1 Objetivos del Análisis"
+  },
+  {
+    "objectID": "demo.html#convalidar-variables-de-fuentes-de-datos",
+    "href": "demo.html#convalidar-variables-de-fuentes-de-datos",
+    "title": "6  Demostración Consumo Energético",
+    "section": "6.2 Convalidar variables de fuentes de datos",
+    "text": "6.2 Convalidar variables de fuentes de datos"
+  },
+  {
+    "objectID": "demo.html#especificaciones",
+    "href": "demo.html#especificaciones",
+    "title": "6  Demostración Consumo Energético",
+    "section": "6.3 Especificaciones",
+    "text": "6.3 Especificaciones"
+  },
+  {
+    "objectID": "demo.html#comparación-de-modelos",
+    "href": "demo.html#comparación-de-modelos",
+    "title": "6  Demostración Consumo Energético",
+    "section": "6.4 Comparación de Modelos",
+    "text": "6.4 Comparación de Modelos"
+  },
+  {
+    "objectID": "demo.html#resultados",
+    "href": "demo.html#resultados",
+    "title": "6  Demostración Consumo Energético",
+    "section": "6.5 Resultados",
+    "text": "6.5 Resultados"
+  },
+  {
+    "objectID": "recursos.html#guias-manuales-y-seminarios",
+    "href": "recursos.html#guias-manuales-y-seminarios",
+    "title": "7  Recursos",
+    "section": "7.1 Guias, Manuales y Seminarios",
+    "text": "7.1 Guias, Manuales y Seminarios\n\nSAE4SDG: Guia para el desarrollo de estimaciones de area pequeña desarrollada por el departamento de estadísticas de la ONU en el contexto de generar herramientas para el monitoreo de objetivos de desarrollo sostenible. Es un excelente punto de partida para tener una vision global del tema, además de incluir recursos, ejemplos, bases de datos y referencias a otros recursos de educación relevante.\nSeminario SAE Chile 2022 Cepal: Repositorio con presentaciones de aplicaciones destacadas de SAE en Chile."
+  },
+  {
+    "objectID": "recursos.html#blogs-y-presentaciones",
+    "href": "recursos.html#blogs-y-presentaciones",
+    "title": "7  Recursos",
+    "section": "7.2 Blogs y Presentaciones",
+    "text": "7.2 Blogs y Presentaciones\n\nEncuentro SAE Chile cepal"
+  },
+  {
+    "objectID": "recursos.html#software-estadístico",
+    "href": "recursos.html#software-estadístico",
+    "title": "7  Recursos",
+    "section": "7.3 Software estadístico",
+    "text": "7.3 Software estadístico\n\nemdi: “Estimating and Mapping Disagrgregated Indicators” Paquete de R que destaca por su flexibilidad y por ser usado como punto de partida para generar nuevas implementaciones.\nstata\n\n…"
+  },
+  {
+    "objectID": "recursos.html#videos",
+    "href": "recursos.html#videos",
+    "title": "7  Recursos",
+    "section": "7.4 videos",
+    "text": "7.4 videos\n\nSeminario CEPAL SAE 2023: Este seminario realizado el 2023 contiene un conjunto de presentaciones y referencias a desarrollos actuales metodológicos sobre la estimaciones de areas pequeñas, destacando la actualidad de estos además del contexto asociado a sudamérica y países en desarrollo.\nPaula Moraga"
+  },
+  {
+    "objectID": "recursos.html#libros",
+    "href": "recursos.html#libros",
+    "title": "7  Recursos",
+    "section": "7.5 libros",
+    "text": "7.5 libros\n\nMolina y Rao\nMultilevel SAE"
+  },
+  {
+    "objectID": "recursos.html#papers",
+    "href": "recursos.html#papers",
+    "title": "7  Recursos",
+    "section": "7.6 Papers",
+    "text": "7.6 Papers\n\nMolina y Rao 2010\nSugasawa y Kobokawa 2021\nMolina 2019\nNewhouse et al 2022"
   }
 ]
