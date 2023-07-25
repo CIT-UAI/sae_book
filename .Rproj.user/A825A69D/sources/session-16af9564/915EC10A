@@ -13,15 +13,20 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "8,0",
-        "scrollLine": "0"
+        "cursorPosition": "32,39",
+        "scrollLine": "19",
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "0",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "103:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1690315857,
+    "lastKnownWriteTime": 1690318149,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1690315857,
+    "last_content_update": 1690318149247,
     "read_only": false,
     "read_only_alternatives": []
 }

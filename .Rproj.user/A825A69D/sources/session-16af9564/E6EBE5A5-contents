@@ -3,8 +3,8 @@ project:
 
 book:
   title: "Estimación de Área Pequeña"
-  author: "Norah Jones"
-  date: "25-07-2023"
+  author: "Equipo Investigación, CIT"
+  date: "Julio 2023"
   chapters:
     - index.qmd
     - intro.qmd

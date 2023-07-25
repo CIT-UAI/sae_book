@@ -6,3 +6,32 @@ imagen de pasos principales
 
 Tza...
 
+![Flujo de Trabajo SAE](sae-workflow.png)
+
+## Especificación
+
+Entrada:
+
+- Necesidades de usuarios
+
+- Disponibilidad de Datos
+
+- Métodos SAE
+
+Salida:
+
+- Objetivos de estimación y geografías
+
+- Elección inicial de métodos y software
+
+## Análisis y adaptación
+
+- Estimaciones preliminares 
+
+## Evaluación
+
+- Responder la pregunta ¿son satisfactorios los resultados?
+
+Si la respuesta es negativa se vuelve a la etapa de especificación
+
+Si la respuesta es positiva se generan estimaciones finales y se calculan medidas de incertidumbre
