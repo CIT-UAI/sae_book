@@ -48,7 +48,7 @@ En la práctica, la varianza de efectos aleatorios $A$ es desconocida y debe ser
 
 ## Modelos de Unidad
 
-[Referencia wiki](https://unstats.un.org/wiki/display/SAE4SDG/Producing+SAE) 
+[Referencia wiki](https://unstats.un.org/wiki/display/SAE4SDG/Unit-level+models) 
 
 Cuando existen datos disponibles a nivel de unidad (por ejemplo a nivel de hogares) se puede usar un analisis más profundo. Sea $y_{i1},...,y_{yn_i}$ una muestra a nivel de unidad de la area i-esima para $i=1,..,m$ y seav $x_{i1},...,x_{yn_i}$ los vectores fijos de covariantes con o sin el intercepto, el modelo de error anidado se describe como:
 

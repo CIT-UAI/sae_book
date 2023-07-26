@@ -80,6 +80,8 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -183,9 +185,11 @@ div.csl-indent {
   <ul>
   <li><a href="#modelos-de-área" id="toc-modelos-de-área" class="nav-link active" data-scroll-target="#modelos-de-área"><span class="header-section-number">4.1</span> Modelos de Área</a></li>
   <li><a href="#modelos-de-unidad" id="toc-modelos-de-unidad" class="nav-link" data-scroll-target="#modelos-de-unidad"><span class="header-section-number">4.2</span> Modelos de Unidad</a></li>
-  <li><a href="#formas-de-estimación" id="toc-formas-de-estimación" class="nav-link" data-scroll-target="#formas-de-estimación"><span class="header-section-number">4.3</span> Formas de estimación</a></li>
-  <li><a href="#modelo-multinivel-de-errores-aninados" id="toc-modelo-multinivel-de-errores-aninados" class="nav-link" data-scroll-target="#modelo-multinivel-de-errores-aninados"><span class="header-section-number">4.4</span> Modelo Multinivel de errores aninados</a></li>
-  <li><a href="#estimación-de-mse-e-intervalos-de-confianza" id="toc-estimación-de-mse-e-intervalos-de-confianza" class="nav-link" data-scroll-target="#estimación-de-mse-e-intervalos-de-confianza"><span class="header-section-number">4.5</span> Estimación de MSE e intervalos de Confianza</a></li>
+  <li><a href="#estimación-de-mse-e-intervalos-de-confianza" id="toc-estimación-de-mse-e-intervalos-de-confianza" class="nav-link" data-scroll-target="#estimación-de-mse-e-intervalos-de-confianza"><span class="header-section-number">4.3</span> Estimación de MSE e intervalos de Confianza</a>
+  <ul class="collapse">
+  <li><a href="#estimacion-de-mse" id="toc-estimacion-de-mse" class="nav-link" data-scroll-target="#estimacion-de-mse"><span class="header-section-number">4.3.1</span> Estimacion de MSE</a></li>
+  <li><a href="#estimación-de-intervalos-de-confianza" id="toc-estimación-de-intervalos-de-confianza" class="nav-link" data-scroll-target="#estimación-de-intervalos-de-confianza"><span class="header-section-number">4.3.2</span> Estimación de intervalos de confianza</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -209,32 +213,84 @@ div.csl-indent {
 
 </header>
 
-<p>INTRODUCCION SE REDACTA AL FINAL</p>
-<p>ideas:</p>
-<p>Grandes distinciones y modelos básicos</p>
-<p>Detalles de estimación para aplicaciones revisadas y</p>
-<p>Estimaciones de parámetros no lineales de la población en subareas</p>
-<p>Desagregación de información</p>
-<p>“Tomar fuerza”</p>
+<p>El término area pequeña se relaciona no solo a un espacio geográfico sino tambien puede hacer referencia a un subgrupo específico de la población. El objetivo es entonces estimar las características de esta area o subgrupo, y el problema viene de que la información disponible para realizar una estimación directa entrega resultados muy variables o poco confiables. Esto último debido a un tamaño muestral pequeño (pocas observaciones).</p>
+<p>Para solucionar esto y mejorar la precisión de las estimaciones directas de las encuestas, se usa información suplementaria relevante como por ejemplo datos de areas relacionadas y covariantes de otras fuentes. Suele usarse el término “prestar fuerza” en este contexto.</p>
+<p>Respecto de los modelos usados destacan los modelos multinivel o lineales mixtos, destacando el trabajo de <span class="citation" data-cites="sugasawaSmallAreaEstimation2020">Sugasawa and Kubokawa (<a href="references.html#ref-sugasawaSmallAreaEstimation2020" role="doc-biblioref">2020</a>)</span> por entregar una revisión y resumen de aplicaciones en contexto de estimaciones de areas pequeñas. Los resultados que entregan son basados en modelos y son llamados BLUP por ser los mejores predictores lineales no sesgados, según las siglas en inglés (<em>Best Linear Unbiased Predictors</em>). Siendo la ventaja de este enfoque el permitir acotar (disminuir la variabilidad de) los resultados en areas pequeñas hacia una cantidad estable construída mediante la combinación de datos.</p>
+<p>Esto último deriva principalmente por la estructura de los modelos multinivel donde la observacion se explica tanto por parametros comunes, efectos aleatorios y errores residuales. Es así como el efecto de acotar viene por el modelamiento del efecto aleatorio, y la combinación de información se expresa en los parámetros comunes. Mayor detalle de la estimación de estos modelos y su implementación en R puede encontrarse en la web mediante una simple búsqueda en google, sin embargo destaca el siguiente <a href="https://m-clark.github.io/mixed-models-with-R/introduction.html">tutorial</a> por su parsimonia y profundidad.</p>
+<p>A continuación se describen la aplicación de modelos básicos basados en modelos multinivel, el modelo de area de Fay-Herriot y el modelo de unidad de Errores Anidados, además de revisar la forma de cálculo de las medidas de incertidumbre, siguiendo el trabajo de <span class="citation" data-cites="sugasawaSmallAreaEstimation2020">Sugasawa and Kubokawa (<a href="references.html#ref-sugasawaSmallAreaEstimation2020" role="doc-biblioref">2020</a>)</span>.</p>
 <section id="modelos-de-área" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="modelos-de-área"><span class="header-section-number">4.1</span> Modelos de Área</h2>
 <p><a href="https://unstats.un.org/wiki/display/SAE4SDG/Area-level+models">Referencia Wiki</a></p>
+<p>La mayoría de los datos públicos se reportan en datos agregados o promedios para ciudades o regiones. El modelo de Fay-Herriot (FH) es un modelo multinivel para estimar las medias reales de area <span class="math inline">\(\theta_1,...,\theta_m\)</span> basado en estadísticas promedios a nivel de area, denotadas por <span class="math inline">\(y_1,...,y_m\)</span> donde <span class="math inline">\(y_i\)</span> es un estimador directo de <span class="math inline">\(\theta_i\)</span> para <span class="math inline">\(i=1,..,m\)</span>. Notar que <span class="math inline">\(y_i\)</span> es un estimador crudo de alta varianza. Debido a que el tamaño muestral para calcular <span class="math inline">\(y_i\)</span> en la pratica es pequeño, se usa información adicional. Siendo <span class="math inline">\(x_i\)</span> un vector de características conocidas con un término de intercepto, el modelo FH viene dado por:</p>
+<p><span class="math display">\[
+y_i=\theta_i+\epsilon_i \quad \theta_i=x^t_i\beta +\nu_i,\quad i=1,...,m
+\]</span></p>
+<p>Con <span class="math inline">\(\beta\)</span> un vector de coeficientes de regresion, <span class="math inline">\(\epsilon_i\)</span> y <span class="math inline">\(\nu_i\)</span> son repecticamente errores de muestreo y efectos aleatorios, los cuales se distribuyen de forma independiente como <span class="math inline">\(\epsilon\sim N(0,D_i)\)</span> y <span class="math inline">\(\nu_i\sim N(0,A)\)</span>. Donde <span class="math inline">\(D_i\)</span> es la varianza de <span class="math inline">\(y_i\)</span> dado <span class="math inline">\(\theta_i\)</span>, la cual se asume conocida, y <span class="math inline">\(A\)</span> es un parametro de varianza desconocido. El supuesto de <span class="math inline">\(D_i\)</span> conocido parece restrictivo pero puede estimarse con data a priori.</p>
+<p>El mejor predictor de <span class="math inline">\(\theta_i\)</span> bajo perdida cuadratica es la expectativa condicional:</p>
+<p><span class="math display">\[
+E[\theta_i|y_i] = \gamma_iy_i + (1-\gamma_i)x_i^t\beta
+\]</span></p>
+<p>Donde <span class="math inline">\(gamma_i=A/(A+D_i)\)</span> es conocido como un coeficiente de acotamiento. Es decir que genera un equilibrio basado en las varianzas respectivas de la estimación directa y la varianza de los datos auxiliares.</p>
+<p>Siguiendo la formulación propuesta, <span class="math inline">\(\beta\)</span> puede estimarse por minimos cuadrados generalizados (GLS):</p>
+<p><span class="math display">\[
+\hat{\beta}_{GLS}=\left( \sum_{i=1}^m \frac{x_ix_i^t}{A+D_i}\right) ^{-1} \left( \sum_{i=1}^m \frac{x_iy_i}{A+D_i}\right)
+\]</span></p>
+<p>Al reemplazar <span class="math inline">\(\beta\)</span> con <span class="math inline">\(\hat{\beta}\)</span> se obtiene el mejor predictor lineal no sesgado (BLUP):</p>
+<p><span class="math display">\[
+\tilde{\theta}_i = \gamma_iy_i + (1-\gamma_i)x_i^t\hat{\beta}_{GLS}
+\]</span></p>
+<p>Ya que <span class="math inline">\(\hat{\beta}_{GLS}\)</span> se construye a partir de todos los datos, el estimador de regresion <span class="math inline">\(x_i^t \hat{\beta}_{GLS}\)</span> es mucho más estable que los estimadores directos <span class="math inline">\(y_i\)</span>.</p>
+<p>En la práctica, la varianza de efectos aleatorios <span class="math inline">\(A\)</span> es desconocida y debe ser reemplazada en <span class="math inline">\(\gamma_i\)</span> y <span class="math inline">\(\hat{\beta}_{GLS}\)</span> por un estimador basado en la muestra, lo que genera el mejor predictor lineal no sesgado empirico (EBLUP).</p>
 </section>
 <section id="modelos-de-unidad" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="modelos-de-unidad"><span class="header-section-number">4.2</span> Modelos de Unidad</h2>
 <p><a href="https://unstats.un.org/wiki/display/SAE4SDG/Producing+SAE">Referencia wiki</a></p>
-</section>
-<section id="formas-de-estimación" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="formas-de-estimación"><span class="header-section-number">4.3</span> Formas de estimación</h2>
-</section>
-<section id="modelo-multinivel-de-errores-aninados" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="modelo-multinivel-de-errores-aninados"><span class="header-section-number">4.4</span> Modelo Multinivel de errores aninados</h2>
-<p>Guiarse por <span class="citation" data-cites="sugasawaSmallAreaEstimation2020">Sugasawa and Kubokawa (<a href="references.html#ref-sugasawaSmallAreaEstimation2020" role="doc-biblioref">2020</a>)</span></p>
+<p>Cuando existen datos disponibles a nivel de unidad (por ejemplo a nivel de hogares) se puede usar un analisis más profundo. Sea <span class="math inline">\(y_{i1},...,y_{yn_i}\)</span> una muestra a nivel de unidad de la area i-esima para <span class="math inline">\(i=1,..,m\)</span> y seav <span class="math inline">\(x_{i1},...,x_{yn_i}\)</span> los vectores fijos de covariantes con o sin el intercepto, el modelo de error anidado se describe como:</p>
+<p>$$ y_{ij}=x_{ij}^t+<em>i+</em>{ij}, j=1,…n_i, i=1,…,m,</p>
 <p>$$</p>
-<p>$$</p>
+<p>Donde <span class="math inline">\(\nu_i\)</span> y <span class="math inline">\(\epsilon_{ij}\)</span> son efectos aleatorios y el terminos de error y son independientes y distribuidos como <span class="math inline">\(\nu_i\sim N(0,\tau^2)\)</span> y <span class="math inline">\(\epsilon_{ij} \sim N(0, \sigma ^2)\)</span>, <span class="math inline">\(\beta\)</span> es un vector de coeficientes de regresion desconocidos, y <span class="math inline">\(\tau ^2\)</span> y <span class="math inline">\(\sigma^2\)</span> son parametros de varianza desconocidos.</p>
+<p>Se nota que <span class="math inline">\(\nu_i\)</span> es un efecto aleatorio que depende del area <span class="math inline">\(i\)</span>-esima y es comun a las observaciones en la mismas area_. Esto induce correlaciones entre las observaciones <span class="math inline">\(y_{ij}\)</span> las cuales se expresan como <span class="math inline">\(Cov(y_{ij}, y_{ij'})=\tau^2\)</span> para <span class="math inline">\(j\neq j'\)</span>, notando que las observaciones en diferentes areas son independientes. Por tanto estas se llaman varianzas <em>within</em> y <em>between</em> (dentro y entre).</p>
+<p>Este modelo se usa tipicamente en un marco de trabajo de modelos de pobalcion finita. Asumiento que el area <span class="math inline">\(i\)</span> contiene <span class="math inline">\(N_i\)</span> unidades en total, pero solo <span class="math inline">\(n_i\)</span> son muestreadas. Por simplicidad, se asume un mecanismo de muestreo aleatorio simple (por lo que no se consideran factores de expansion). Para todas las unidades se asume un modelo de población:</p>
+<p><span class="math display">\[
+Y_{ij} = x_{ij}^t\beta +\nu_i + \epsilon_{ij}, \quad j=i,...,N_i, \quad i=1,...,m
+\]</span></p>
+<p>Donde <span class="math inline">\(Y_{ij}\)</span> son las características de la unidad <span class="math inline">\(j\)</span> en el area <span class="math inline">\(i\)</span>. Sin pérdida de generalidad, se asumen que se observan las primeras <span class="math inline">\(n_i\)</span> caracteristicas y el resto no son observadas. Bajo esta configuracion el promedio real de area se define como:</p>
+<p><span class="math display">\[
+\frac{1}{N_i}\sum_{j=1}^{N_i} Y_{ij} = \frac{1}{N_i} \sum_{j=1}^{N_i}(x_{ij}^t\beta + \nu_i + \epsilon_{ij}) = \bar{X}_i^t\beta + \nu_i + \frac{1}{N_i}\sum_{j=1}^{N_i} \epsilon_{ij}
+\]</span></p>
+<p>En la práctica, el numero total de unidades <span class="math inline">\(N_i\)</span> es grande aunque el numero total de unidades muestradas <span class="math inline">\(n_i\)</span> no es grande. Por tanto el ultimo termino puede ser muy pequeño, por tanto se puede definir el parametro de la media como <span class="math inline">\(\theta_i = \bar{X}_i^t\beta+\nu_i\)</span>. Y estimarlo al conocer el vector de información auiliar <span class="math inline">\(\bar{X_i^t}\)</span>, lo cual es comun e la práctica.</p>
+<p>El mejor de predictr de <span class="math inline">\(\nu_i\)</span> viene dado por:</p>
+<p><span class="math display">\[
+\tilde{\nu_i} = \frac{n_i\tau^2}{\sigma^2+n_i\tau^2}(\bar{y_i} - \bar{x_i}^t\beta)
+\]</span></p>
+<p>Donde <span class="math inline">\(\bar{y_i}=n_i {-1}\sum_{j=i}^{n_i}y_{ij}\)</span> y <span class="math inline">\(\bar{x_i}=n_i {-1}\sum_{j=i}^{n_i}x_{ij}\)</span>.</p>
+<p>De forma similar al modelo FH, se puede estimar <span class="math inline">\(\beta\)</span> por el estimador general de minimos cuadrados (GLS) basados en los datos muestrales. Los parámetros de varianza también se estiman de esta forma. Es así que el mejor predictor EBLUP viene dado por <span class="math inline">\(\hat{\theta_i}=\bar{X}_i^t\hat{\beta}_{GLS} + \hat{\nu_i}\)</span></p>
 </section>
-<section id="estimación-de-mse-e-intervalos-de-confianza" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="estimación-de-mse-e-intervalos-de-confianza"><span class="header-section-number">4.5</span> Estimación de MSE e intervalos de Confianza</h2>
+<section id="estimación-de-mse-e-intervalos-de-confianza" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="estimación-de-mse-e-intervalos-de-confianza"><span class="header-section-number">4.3</span> Estimación de MSE e intervalos de Confianza</h2>
+<p>Una parte importante de la estimación de area pequeña es la evaluación de la confianza y precisión de los resultados. Para esto se usan los errores cuadraticos medios (MSE) y los intervalos de confianza.</p>
+<section id="estimacion-de-mse" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="estimacion-de-mse"><span class="header-section-number">4.3.1</span> Estimacion de MSE</h3>
+<p>Considerando una situación donde el parámetro es <span class="math inline">\(\theta_i\)</span> y <span class="math inline">\(\tilde{\theta_i}\)</span> representa la expectativa condicional de <span class="math inline">\(\theta_i\)</span> dado <span class="math inline">\(y_i\)</span> el cual depende del parámetro desconocido <span class="math inline">\(\Psi\)</span>. Siendo <span class="math inline">\(\hat{\theta_i}\)</span> el mejor predictor empirico de <span class="math inline">\(theta_i\)</span>, se define el MSE de <span class="math inline">\(\hat{\theta}_i\)</span> como:</p>
+<p><span class="math display">\[
+MSE_i(\Psi) = E[(\hat{\theta_i} - \theta_i)^2]
+\]</span></p>
+<p>Usando el hecho de que <span class="math inline">\(\tilde{\theta_i}\)</span> es la expectativa condiciona de <span class="math inline">\(\theta_i\)</span> dado <span class="math inline">\(y_i\)</span> tenemos que:</p>
+<p><span class="math display">\[
+MSE_i(\Psi) = E[(\tilde{\theta_i} - \theta_i)^2] + E[(\hat{\theta_i} - \tilde{\theta_i})^2] = g_{i1}(\Psi) + g_{i2}(\Psi)
+\]</span></p>
+<p>Con <span class="math inline">\(g_{i1}(\Psi)\)</span> representando la variablidad del mejor predictor dado <span class="math inline">\(\Psi\)</span> y tipicamente de orden <span class="math inline">\(O(1)\)</span>, mientras que <span class="math inline">\(g_{i2}(\Psi)\)</span> mide la variabilidad adicional derivada de la estimación de <span class="math inline">\(\Psi\)</span>, tipicamente de orde <span class="math inline">\(O(m_{-1})\)</span>, en la mayoria de los casos, en general se deriva una formula de aproximacion hasta el segundo orden.</p>
+<p>Para estimar estos elementos existen derivaciones analíticas, método de bootstrap y método de jackknife. Estos pueden profundizarse aparte. Sin embargo el método de boostrap cuenta entre sus variantes el método de bootrap hibrido, el cual separa los estimadodes de <span class="math inline">\(g_{i1}\)</span> y <span class="math inline">\(g_{i2}\)</span> mediante el bootrap paramétrico, cuyo enfoque a grandes razgos consiste en estimar <span class="math inline">\(\Psi\)</span> mediante la simulación de muestras. Esto último implica generar realizaciones de los errores de muestreo y efectos aleatorios derivados de la estimación inicial.</p>
+</section>
+<section id="estimación-de-intervalos-de-confianza" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="estimación-de-intervalos-de-confianza"><span class="header-section-number">4.3.2</span> Estimación de intervalos de confianza</h3>
+<p>Respecto de los intervalos de confianza, existen dos enfoques generales, el método analítico basado en expansion de series de Tayler y el metodo de bootstrap paramétrico.</p>
+<p>Por simplicidad se asume que <span class="math inline">\(\theta_i|y_i \sim N(\tilde{\theta}_i(y_i,\Psi), s_i(\Psi)^2)\)</span>, donde <span class="math inline">\(\tilde{\theta}_i\)</span> y <span class="math inline">\(s_i^2\)</span> son expectativas condicionales y varianza de <span class="math inline">\(\theta_i\)</span>.</p>
+<p>El método de bootstrap oarpanetruci se basa en generar un estadístico pivote. Se define <span class="math inline">\(U_i(\Psi) = (\theta_i - \tilde{\theta_i})/s_i(\Psi)\)</span>, luego <span class="math inline">\(U_i(\Psi) \sim N(0,1)\)</span> con <span class="math inline">\(\Psi\)</span> el parámetro verdadero. Se aproxima la distribución de <span class="math inline">\(U_i(\hat{\Psi})\)</span> mediante bootrsap parametrico, es deceir generar muestras bootrap desde le modelo estimado, y se computanel estimador de bootstrap <span class="math inline">\(\hat{\Psi}_{(b)}^*\)</span> para <span class="math inline">\(b=1,...,B\)</span>. Luego la distribución de <span class="math inline">\(U_i(\hat{\Psi})\)</span> puede aproximarse por <span class="math inline">\(B\)</span> realización bootrap.</p>
+<p>Siendo <span class="math inline">\(z_{iu}^*(\alpha)\)</span> y <span class="math inline">\(z_{il}^*(\alpha)\)</span> los 100<span class="math inline">\(\alpha\)</span>% cuantiles empiricos de la distribucion simulada, el intervalo de confianza calibrado viene dado por:</p>
+<p><span class="math display">\[
+(\hat{\theta}_i +  z_{il}^*(\alpha)) s_i(\Psi), \hat{\theta}_i +  z_{iu}^*(\alpha)) s_i(\Psi))
+\]</span></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -242,6 +298,7 @@ div.csl-indent {
 Sugasawa, Shonosuke, and Tatsuya Kubokawa. 2020. <span>“Small Area Estimation with Mixed Models: A Review.”</span> <em>Japanese Journal of Statistics and Data Science</em> 3 (2): 693–720. <a href="https://doi.org/10.1007/s42081-020-00076-x">https://doi.org/10.1007/s42081-020-00076-x</a>.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
