@@ -190,20 +190,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>El siguiente apartado presenta un ejemplo de aplicación de la metodología de estimación de area pequeña en el contexto de estimar el nivel de consumo eléctrico residencial a nivel de zona censal en Chile.</p>
+<p>Este análisis implicó usar datos de la encuesta de caracterízación de consumo energético de los hogares de Chile, realizada el 2017, que cuenta con información representativa a nivel de zona térmica, contando con 3500 hogares encuestados. Para estimar el nivel de consumo eléctrico residencial a nivel de zona censal se usó un modelo de unidad, vinculando la encuesta con los datos del censo de hogares y vivienda de 2017. La particularidad del análisis viene de que fue necesario implementar un indice de agregación intermedio entre la división político administrativa mínima (Comuna) y la unidad muestrada (los hogares), siendo este índice el nivel de zona censal. El análisis implicó entonces estimar un modelo lineal mixto a nivel de encuesta y hogares, y luego usar los parámetros estimados y la varianza de los errores, para simular censos y agreggar el consumo a nivel de zona censal.</p>
 <section id="objetivos-del-análisis" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="objetivos-del-análisis"><span class="header-section-number">6.1</span> Objetivos del Análisis</h2>
+<p>El objetivo consistió en generar una estimación confiable del consumo energético de los hogares al mayor nivel de desagregación territorial posible. En este caso este nivel fue el de zona censal.</p>
 </section>
 <section id="convalidar-variables-de-fuentes-de-datos" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="convalidar-variables-de-fuentes-de-datos"><span class="header-section-number">6.2</span> Convalidar variables de fuentes de datos</h2>
+<p>El primer paso contempló el estudio de las bases de datos y diccionarios de variables del censo y la encuesta de consumo energético de hogares para identificar las preguntas similares. Una vez identificadas estas como información relacionada al nivel educativo del jefe de hogar, el tamaño del hogar, la composición de este, el estado laboral del jefe de hogar e información relacionada a la edad y al tipo de vivienda, se pasó a expresar las distintas respuestas de la base de datos en un mismo formato. Esto último implicó consolidar algunas respuestas debido a diferentes codificaciones usadas en ambas bases. Adicionalmente se generó un proceso de imputación de valores para la composición del hogar, información que no estaba reportada en la totalidad de la encuesta. Esta imputación se hizo en función del resto de variables que detallaban el nivel de consumo las cuales no estaban presentes en la base del censo.</p>
 </section>
 <section id="especificaciones" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="especificaciones"><span class="header-section-number">6.3</span> Especificaciones</h2>
+<p>Una vez consolidadas las bases de datos para el análisis se probaron distintas especificaciones del modelo de unidad, incluyendo las variables imputadas, o transformaciones de estas (expresadas al cuadrado) y calculos del nivel de error multinivel a distinto nivel de agregación, sea comunal, regional o de zona censal.</p>
 </section>
 <section id="comparación-de-modelos" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="comparación-de-modelos"><span class="header-section-number">6.4</span> Comparación de Modelos</h2>
+<p>Las distintas especificaciones de los modelos fueron comparadas en términos de maximizar la correlación entre las agregaciones comunales de consumo y el dato real de consumo comunal para 2017, en conjunto con minimizar el error cuadrático medio de cada especificación. Esto último calculado mediante bootstrap paramétrico.</p>
 </section>
 <section id="resultados" class="level2" data-number="6.5">
 <h2 data-number="6.5" class="anchored" data-anchor-id="resultados"><span class="header-section-number">6.5</span> Resultados</h2>
+<p>Los resultados fueron normalizados a nivel comunal usando los datos de energía abierta, cosa de que la suma de los consumos a nivel de zona censal dentro de cada comuna coincidieran con el dato real.</p>
+<p>Luego se seleccionaron las areas metropolitanas de Santiago, Concepción y Valparaíso, para presentar los resultados.</p>
 
 
 </section>

@@ -4,21 +4,21 @@
     "href": "index.html",
     "title": "Estimación de Área Pequeña",
     "section": "",
-    "text": "Prefacio\nEl presente documento presenta la documentación general de los procesos de estimación en áreas pequeñas o desagregación de información.\nRapido desarrollo en la actualidad\nPapers clasicos"
+    "text": "Prefacio\nEl presente documento presenta la documentación general de los procesos de estimación en áreas pequeñas o desagregación de información."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  Introducción",
     "section": "",
-    "text": "Definicion SAE: conjunto de métodos usadaos para producir estimadores basados en encuestas para areas geográficas o dominios de estudio en los cuales los tamaños muestrales son demasiado pequeños, o incluso ausentes, y así entregar estimaciones válidas.\nPara producir estos estimadores válidos, en general es necesario incluir bases de datos adicionales, mediante un proceso de modelado estadístico.\nDolores: necesidad de datos para diseño de politica publica\nCensos se demoran, encuestas son caras\nTradicion de investigacion en el area, desde libros, hasta la producción de guías de trabajo que entregan directrices para que estos procedimientos puedan ser utilizados por agencias estadísticias nacionales e investigadores interesados en el tema.\nA lo largo del libro se tratarán los siguientes temas\n\nmarco de trabajo\nrevisión teórica de modelos\nEjemplos de aplicaciones\nDemostración\n\nProducir informacion desagregada para distintos grupos de poblacion\nInsumo para la definición de políticas públicas\nIntegración de datos: registros administrativos, web scrapping, datos"
+    "text": "Uno de los insumos escenciales para el diseño de la política pública y el monitoreo del progreso de la sociedad es la disponibilidad de indicadores confiables. Esto es especialmente relevante para los objetivos de desarrollo sostenible y su pretención de no dejar a nadie atrás. Sin embargo, la mayoría de los indicadores relevantes se construye en base a encuestas, las cuales no siempre son representativas a niveles locales o para grupos específicos de la población.\nLas metodologías de estimación de área pequeña (SAE PORpor sus siglas en inglés) presentan un conjunto de métodos que son usados para producir estimadores más precisos cuando los estimadores directos basados en encuestas no son confiables en areas geográficas o dominios de estudio en los cuales los tamaños muestrales son demasiado pequeños, o incluso ausentes, y así entregar estimaciones válidas.\nPara producir estos estimadores, en general es necesario incluir bases de datos adicionales, mediante un proceso de modelado estadístico.\nExiste una basta tradicion de investigación y publicaciones en este tema, desde libros, hasta la producción de guías de trabajo que entregan directrices para que estos procedimientos puedan ser utilizados por agencias estadísticias nacionales e investigadores interesados en el tema.\nEl presente documento pretende entregar una visión general del tema, con una perspectiva enfocada en la aplicación y la práctica de estas metodologías. Para esto se presenta un marco de trabajo aplicado que detalla el rol del investigador, el proceso de estimación general y la relación con los distintos stakeholders. Luego se presenta una revisión teórica donde se presentan los modelos lineales mixtos o de multinivel en su aplicación en estimaciones de area pequeña. Finalmente se presentan ejemplos prácticos de estas metodologías."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
     "title": "2  Resumen",
     "section": "",
-    "text": "Marco de trabajo\nTécnicas de estimación\nSoftware estadístico y paquetes\nUtilidad y ejemplos\nDesagregación de información\n“Tomar fuerza”"
+    "text": "Las metodologías de estimación de area pequeña buscan aumentar la precisión de las estimaciones de indicadores basados en encuestas cuando los datos no son suficientes para representar de manera confiable territorios o grupos de población donde no se cuenta con información suficiente.\nEstos métodos se basan en usar información adicional para “darle más fuerza” a los indicadores directos. Es así que existen principalmente dos familias de métodos, basados en información agregada a nivel de area, o a nivel de unidad. En un contexto de estimación de características de hogares a nivel de comuna, los modelos de area usarán información adicional agregada a nivel de comuna, mientras que los modelos de unidad usarán datos a nivel de hogar.\nSe presenta también un marco de trabajo con guias generales de buenas prácticas para estas estimaciones, con un foco en la relación del investigador con los stakeholders.\nAdemás, se revisa a grandes razgos las metodologías estadísticas más usadas, correspondiendo a modelos lineales mixtos o multinivel. Estos presentan la particularidad de poder modelar efectos fijos y aleatorios para distintos niveles de anidamiento o agregación. COn esto disminuye el efecto nocivo de variables omitidas.\nFinalmente se mencionan aplicaciones notables de la metodología, con objeto de poner en contexto y alentar una revisión más detallada del tema."
   },
   {
     "objectID": "marco-trabajo.html#especificación",
@@ -67,56 +67,56 @@
     "href": "aplicaciones.html#pobreza-comunal",
     "title": "5  Aplicaciones",
     "section": "5.1 Pobreza Comunal",
-    "text": "5.1 Pobreza Comunal"
+    "text": "5.1 Pobreza Comunal\nLa pobreza en Chile se mide mediante la encuesta CASEN, la cual presenta un nivel de representatibidad a nivel de región. Para conocer el nivel de pobreza a nivel comunal se genera una estimación mediante SAE por modelos de Area, usando un conjunto de datos administrativos disponibles en el sector público. Cuando no se cuenta con información (comunas de dificil acceso) a nivel de encuesta, se usa una metodologia de imputación por conglomerados."
   },
   {
     "objectID": "aplicaciones.html#uso-de-imágenes-satelitales",
     "href": "aplicaciones.html#uso-de-imágenes-satelitales",
     "title": "5  Aplicaciones",
     "section": "5.2 Uso de imágenes satelitales",
-    "text": "5.2 Uso de imágenes satelitales"
+    "text": "5.2 Uso de imágenes satelitales\nBattese y otros 1988 es la primera referencia a una aplicación de modelos de unidad mediante modelos mixtos. Esta aplicación se usó para estimar el rendimiento de cocecha de un conjunto de granjas, las cuales presentan información por encuestas de una muestra de granjeros. Este dato fue complementado con información satelital de estos terrenos, usando los datos de Landsat."
   },
   {
     "objectID": "aplicaciones.html#desigualdad-comunal-en-chile",
     "href": "aplicaciones.html#desigualdad-comunal-en-chile",
     "title": "5  Aplicaciones",
     "section": "5.3 Desigualdad comunal en Chile",
-    "text": "5.3 Desigualdad comunal en Chile"
+    "text": "5.3 Desigualdad comunal en Chile\nSimilar al nivel de pobreza, para estimar el nivel de deisigualdad a nivel comunal en Chile se recurrió a metodologías SAE. En este caso, en vez de un modelo de Area se usó un modelo de Unidad usando los datos del censo y la encuesta CASEN. Es así que se estimó el nivel de ingreso de los hogares para calcular la desigualdad en la distribución de ingresos comunales. Estos resultados usan la metodología desarrollada para el Banco Mundial por Elbers, Lanjouw y Lanjouw de 2003, y cuyo detalle puede encontrarse en Agostini 2007."
   },
   {
     "objectID": "demo.html#objetivos-del-análisis",
     "href": "demo.html#objetivos-del-análisis",
     "title": "6  Demostración Consumo Energético",
     "section": "6.1 Objetivos del Análisis",
-    "text": "6.1 Objetivos del Análisis"
+    "text": "6.1 Objetivos del Análisis\nEl objetivo consistió en generar una estimación confiable del consumo energético de los hogares al mayor nivel de desagregación territorial posible. En este caso este nivel fue el de zona censal."
   },
   {
     "objectID": "demo.html#convalidar-variables-de-fuentes-de-datos",
     "href": "demo.html#convalidar-variables-de-fuentes-de-datos",
     "title": "6  Demostración Consumo Energético",
     "section": "6.2 Convalidar variables de fuentes de datos",
-    "text": "6.2 Convalidar variables de fuentes de datos"
+    "text": "6.2 Convalidar variables de fuentes de datos\nEl primer paso contempló el estudio de las bases de datos y diccionarios de variables del censo y la encuesta de consumo energético de hogares para identificar las preguntas similares. Una vez identificadas estas como información relacionada al nivel educativo del jefe de hogar, el tamaño del hogar, la composición de este, el estado laboral del jefe de hogar e información relacionada a la edad y al tipo de vivienda, se pasó a expresar las distintas respuestas de la base de datos en un mismo formato. Esto último implicó consolidar algunas respuestas debido a diferentes codificaciones usadas en ambas bases. Adicionalmente se generó un proceso de imputación de valores para la composición del hogar, información que no estaba reportada en la totalidad de la encuesta. Esta imputación se hizo en función del resto de variables que detallaban el nivel de consumo las cuales no estaban presentes en la base del censo."
   },
   {
     "objectID": "demo.html#especificaciones",
     "href": "demo.html#especificaciones",
     "title": "6  Demostración Consumo Energético",
     "section": "6.3 Especificaciones",
-    "text": "6.3 Especificaciones"
+    "text": "6.3 Especificaciones\nUna vez consolidadas las bases de datos para el análisis se probaron distintas especificaciones del modelo de unidad, incluyendo las variables imputadas, o transformaciones de estas (expresadas al cuadrado) y calculos del nivel de error multinivel a distinto nivel de agregación, sea comunal, regional o de zona censal."
   },
   {
     "objectID": "demo.html#comparación-de-modelos",
     "href": "demo.html#comparación-de-modelos",
     "title": "6  Demostración Consumo Energético",
     "section": "6.4 Comparación de Modelos",
-    "text": "6.4 Comparación de Modelos"
+    "text": "6.4 Comparación de Modelos\nLas distintas especificaciones de los modelos fueron comparadas en términos de maximizar la correlación entre las agregaciones comunales de consumo y el dato real de consumo comunal para 2017, en conjunto con minimizar el error cuadrático medio de cada especificación. Esto último calculado mediante bootstrap paramétrico."
   },
   {
     "objectID": "demo.html#resultados",
     "href": "demo.html#resultados",
     "title": "6  Demostración Consumo Energético",
     "section": "6.5 Resultados",
-    "text": "6.5 Resultados"
+    "text": "6.5 Resultados\nLos resultados fueron normalizados a nivel comunal usando los datos de energía abierta, cosa de que la suma de los consumos a nivel de zona censal dentro de cada comuna coincidieran con el dato real.\nLuego se seleccionaron las areas metropolitanas de Santiago, Concepción y Valparaíso, para presentar los resultados."
   },
   {
     "objectID": "recursos.html#guias-manuales-y-seminarios",
