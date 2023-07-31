@@ -1,13 +1,15 @@
 # Aplicaciones
 
-Estimaciones de parámetros no lineales de la población en subareas
-
-Desagregación de información
-
-
+Este apartado presenta algunas aplicaciones notables de las metodologías de estimación de area pequeña. 
 
 ## Pobreza Comunal
 
+La pobreza en Chile se mide mediante la encuesta CASEN, la cual presenta un nivel de representatibidad a nivel de región. Para conocer el nivel de pobreza a nivel comunal se genera una estimación mediante SAE por modelos de Area, usando un conjunto de datos administrativos disponibles en el sector público. Cuando no se cuenta con información (comunas de dificil acceso) a nivel de encuesta, se usa una metodologia de imputación por conglomerados.
+
 ## Uso de imágenes satelitales
 
+Battese y otros 1988 es la primera referencia a una aplicación de modelos de unidad mediante modelos mixtos. Esta aplicación se usó para estimar el rendimiento de cocecha de un conjunto de granjas, las cuales presentan información por encuestas de una muestra de granjeros. Este dato fue complementado con información satelital de estos terrenos, usando los datos de Landsat.
+
 ## Desigualdad comunal en Chile
+
+Similar al nivel de pobreza, para estimar el nivel de deisigualdad a nivel comunal en Chile se recurrió a metodologías SAE. En este caso, en vez de un modelo de Area se usó un modelo de Unidad usando los datos del censo y la encuesta CASEN. Es así que se estimó el nivel de ingreso de los hogares para calcular la desigualdad en la distribución de ingresos comunales. Estos resultados usan la metodología desarrollada para el Banco Mundial por Elbers, Lanjouw y Lanjouw de 2003, y cuyo detalle puede encontrarse en Agostini 2007.

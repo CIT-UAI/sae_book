@@ -1,11 +1,28 @@
 # Demostración Consumo Energético
 
+El siguiente apartado presenta un ejemplo de aplicación de la metodología de estimación de area pequeña en el contexto de estimar el nivel de consumo eléctrico residencial a nivel de zona censal en Chile.
+
+Este análisis implicó usar datos de la encuesta de caracterízación de consumo energético de los hogares de Chile, realizada el 2017, que cuenta con información representativa a nivel de zona térmica, contando con 3500 hogares encuestados. Para estimar el nivel de consumo eléctrico residencial a nivel de zona censal se usó un modelo de unidad, vinculando la encuesta con los datos del censo de hogares y vivienda de 2017. La particularidad del análisis viene de que fue necesario implementar un indice de agregación intermedio entre la división político administrativa mínima (Comuna) y la unidad muestrada (los hogares), siendo este índice el nivel de zona censal. El análisis implicó entonces estimar un modelo lineal mixto a nivel de encuesta y hogares, y luego usar los parámetros estimados y la varianza de los errores, para simular censos y agreggar el consumo a nivel de zona censal.
+
 ## Objetivos del Análisis
+
+El objetivo consistió en generar una estimación confiable del consumo energético de los hogares al mayor nivel de desagregación territorial posible. En este caso este nivel fue el de zona censal.
 
 ## Convalidar variables de fuentes de datos
 
+El primer paso contempló el estudio de las bases de datos y diccionarios de variables del censo y la encuesta de consumo energético de hogares para identificar las preguntas similares. Una vez identificadas estas como información relacionada al nivel educativo del jefe de hogar, el tamaño del hogar, la composición de este, el estado laboral del jefe de hogar e información relacionada a la edad y al tipo de vivienda, se pasó a expresar las distintas respuestas de la base de datos en un mismo formato. Esto último implicó consolidar algunas respuestas debido a diferentes codificaciones usadas en ambas bases. Adicionalmente se generó un proceso de imputación de valores para la composición del hogar, información que no estaba reportada en la totalidad de la encuesta. Esta imputación se hizo en función del resto de variables que detallaban el nivel de consumo las cuales no estaban presentes en la base del censo.
+
 ## Especificaciones
+
+Una vez consolidadas las bases de datos para el análisis se probaron distintas especificaciones del modelo de unidad, incluyendo las variables imputadas, o transformaciones de estas (expresadas al cuadrado) y calculos del nivel de error multinivel a distinto nivel de agregación, sea comunal, regional o de zona censal.
 
 ## Comparación de Modelos
 
+Las distintas especificaciones de los modelos fueron comparadas en términos de maximizar la correlación entre las agregaciones comunales de consumo y el dato real de consumo comunal para 2017, en conjunto con minimizar el error cuadrático medio de cada especificación. Esto último calculado mediante bootstrap paramétrico.
+
 ## Resultados
+
+Los resultados fueron normalizados a nivel comunal usando los datos de energía abierta, cosa de que la suma de los consumos a nivel de zona censal dentro de cada comuna coincidieran con el dato real.
+
+Luego se seleccionaron las areas metropolitanas de Santiago, Concepción y Valparaíso, para presentar los resultados.
+
